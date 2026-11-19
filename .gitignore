@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Training outputs, checkpoints, datasets (keep them on the HF Hub / Drive)
+outputs/
+checkpoints/
+data/
+wandb/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+
+# Raw rollout videos (curated GIFs for the README go in assets/)
+*.mp4
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
