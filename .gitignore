@@ -12,6 +12,7 @@ dist/
 .venv/
 venv/
 env/
+lerobot/
 
 # Training outputs, checkpoints, datasets (keep them on the HF Hub / Drive)
 outputs/

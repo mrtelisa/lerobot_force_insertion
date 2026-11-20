@@ -1,0 +1,15 @@
+# Pinned versions verified to work together (LeRobot API changes quickly).
+#
+# Local CPU-only machine: install torch and torchcodec from the CPU index FIRST, otherwise pip pulls
+# the CUDA builds (torchcodec then fails to import with "libnvrtc.so.13: cannot open shared object file"):
+#   pip install torch==2.15.0 torchvision==0.29.2 torchcodec==0.17.0 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+#
+# GPU machine (Kaggle / Colab): just `pip install -r requirements.txt`.
+
+lerobot[aloha,training]==0.7.0
+torch==2.15.0
+torchvision==0.29.2
+torchcodec==0.17.0
+gym-aloha==0.1.5
+mujoco==3.8.1
